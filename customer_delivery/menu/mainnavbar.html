@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans+SC&family=Athiti:wght@500&family=Bai+Jamjuree&family=Bebas+Neue&family=Comfortaa:wght@600&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Jost:wght@400;600&family=Oswald:wght@200..700&family=Play&family=Poor+Story&family=Prompt:wght@300&family=Protest+Revolution&family=Quicksand&family=Roboto:wght@500&family=Sixtyfour&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body style="
+      font-family: Prompt, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    ">
+  <nav id="1" class="backdrop-blur-md">
+    <div class="flex justify-between h-[6rem] px-10 shadow items-center smooth">
+        <div class="flex space-x-1 items-center flex-shrink-0 animate-pulse ">
+            <a href="../home/index.html">
+                <img src="logo.png" width="130px" height="130px"
+                    class="self-center ml-[-20%] mt-[1%] transform hover:scale-105 transition-transform duration-100" /></a>
+
+        </div>
+        <button id="toggleMenu"
+            class="sm:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm rounded-lg text-gray-400 transform hover:scale-105 transition-transform duration-100"
+            aria-controls="navbar-hamburger" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+        <div class="flex space-x-6 items-center hidden sm:flex text-nowrap">
+                <a href="../menu/fullMenu.php"
+                class="px-4 text-white text-sm transform hover:scale-[120%] hover:text-red-500 transition-transform duration-100 ">เมนู</a>
+                <a href="../reservation/index.php"
+                class="px-4 text-white text-sm transform hover:scale-[120%] hover:text-red-500 transition-transform duration-100 ">ประวัติ</a>
+            <a href="../reservation/index.php"
+                class="px-4 text-white text-sm transform hover:scale-[120%] hover:text-red-500 transition-transform duration-100 ">สำรองที่นั่ง</a>
+            <div
+                class="text-white text-sm transform hover:scale-[120%] hover:text-red-500 transition-transform duration-100">
+                <button
+                    class="text-white text-sm transform hover:scale-[105%] hover:text-red-500 transition-transform duration-100"
+                    type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                    aria-controls="drawer-example">
+                    รีวิว
+                </button>
+            </div>
+  <a href="../../index.php"
+            class="flex px-4 py-2 rounded text-white transform hover:scale-[120%] hover:text-red-500 transition-transform duration-100 text-sm">ออกจากระบบ
+            <svg class="ml-3" fill="currentColor"  height="20px" width="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 384.971 384.971" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g id="Sign_Out"> <path d="M180.455,360.91H24.061V24.061h156.394c6.641,0,12.03-5.39,12.03-12.03s-5.39-12.03-12.03-12.03H12.03 C5.39,0.001,0,5.39,0,12.031V372.94c0,6.641,5.39,12.03,12.03,12.03h168.424c6.641,0,12.03-5.39,12.03-12.03 C192.485,366.299,187.095,360.91,180.455,360.91z"></path> <path d="M381.481,184.088l-83.009-84.2c-4.704-4.752-12.319-4.74-17.011,0c-4.704,4.74-4.704,12.439,0,17.179l62.558,63.46H96.279 c-6.641,0-12.03,5.438-12.03,12.151c0,6.713,5.39,12.151,12.03,12.151h247.74l-62.558,63.46c-4.704,4.752-4.704,12.439,0,17.179 c4.704,4.752,12.319,4.752,17.011,0l82.997-84.2C386.113,196.588,386.161,188.756,381.481,184.088z"></path> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </g> </g></svg>
+            </a>
+        </div>
+    </div>
+    <div class="hidden w-full" id="navbar-hamburger">
+        <ul class="flex flex-col font-medium rounded-lg justify-center items-center backdrop-blur-md">
+            <li>
+            <a href="../menu/fullMenu.php"
+                class="block ml-2 py-2 px-3 text-white hover:text-red-95">เมนู</a>
+            </li>
+            <li>
+            <a href="../reservation/index.php"
+                class="block ml-2 py-2 px-3 text-white hover:text-red-95">ประวัติ</a>
+            </li>
+            <li>
+                <a href="../reservation/index.php"
+                    class="block ml-2 py-2 px-3 text-white hover:text-red-950">สำรองที่นั่ง</a>
+            </li>
+            <li>
+                <button class="block ml-2 py-2 px-3 text-white hover:text-red-950" type="button"
+                    data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                    aria-controls="drawer-example">
+                    รีวิว
+                </button>
+            </li>
+            <li>
+            <button class="block ml-2 py-2 px-3 text-white hover:text-red-950" type="button"
+                    data-drawer-target="drawer-example" data-drawer-show="drawer-example"
+                    aria-controls="drawer-example">
+                    <a href="../../index.php"
+                class="font-medium flex px-4 py-2 rounded text-white transform hover:scale-[120%] hover:text-red-500 transition-transform duration-100 text-sm">ออกจากระบบ
+                </a>
+                </button>
+
+            </li>
+        </ul>
+    </div>
+</nav>
+  <div>
+  </div>
+</body>
+
+</html>
