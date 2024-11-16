@@ -17,7 +17,6 @@
 - **Menu Management**: Add, update, and remove menu items.
 - **User Roles**: Multiple roles for restaurant staff, including Admin, Chef, and Waitstaff, each with specific permissions.
 - **Customer Interaction**: Customers can place orders directly and view the menu online.
-- **Employee Management**: Manage staff schedules and roles.
 - **Reports**: Generate reports on sales, orders, and customer feedback.
 
 ## Technologies Used
